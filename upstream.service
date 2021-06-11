@@ -1,0 +1,8 @@
+[Unit]
+Description=AdGuardHome Upstream Service
+After=network-online.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/bin/bash /usr/local/bin/upstream.sh
