@@ -7,7 +7,9 @@ This is the use of [dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-c
 - Improve resolve speed for Chinese domains.
 - Get the best CDN results.
 - Prevent DNS poisoning.
+- **Better than redir-host method.**
 
+**In fact, for DNS resolution, when the domain's name server is in other region, even if the domain is resolved to an address in mainland China, we can still get the fastest resolution by DNS request from the other region in most cases.** And this list only includes domains that use domain name server from mainland China, that's why it is better than redir-host or any other similar methods.
 
 ## Quick Start
 
