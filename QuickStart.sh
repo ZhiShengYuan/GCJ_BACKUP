@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i 's|upstream_dns_file: ""|upstream_dns_file: /usr/local/AdGuardHome/upstream.txt|g' /opt/AdGuardHome/AdGuardHome.yaml
+sed -i 's|upstream_dns_file: ""|upstream_dns_file: /opt/AdGuardHome/AdGuardHome/upstream.txt|g' /opt/AdGuardHome/AdGuardHome.yaml
 curl -o '/usr/local/bin/upstream.sh' 'https://raw.githubusercontent.com/fernvenue/adguard-home-upstream/master/upstream.sh'
 chmod +x /usr/local/bin/upstream.sh
 /usr/local/bin/upstream.sh
