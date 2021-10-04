@@ -10,6 +10,6 @@ sed -i 's|114.114.114.114|]tls://223.5.5.5|g' '/var/tmp/applechina.txt'
 cat '/var/tmp/applechina.txt' '/var/tmp/chinalist.txt' | perl -CIOED -p -e 's/^.*\p{Script_Extensions=Han}.*$//g' > /var/tmp/upstream.txt
 sed -i '/^$/d' /var/tmp/upstream.txt
 # When the upstream solves this problem in the future, changes need to be made here.
-cat '/var/tmp/default.txt' '/var/tmp/upstream.txt' > /opt/AdGuardHome/upstream.txt
+cat '/var/tmp/default.txt' '/var/tmp/upstream.txt' > /usr/share/upstream.txt
 rm -rf '/var/tmp/default.txt' '/var/tmp/applechina.txt' '/var/tmp/chinalist.txt' '/var/tmp/upstream.txt'
 systemctl restart AdGuardHome
