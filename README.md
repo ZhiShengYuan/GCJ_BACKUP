@@ -42,6 +42,10 @@ systemctl start upstream.timer
 systemctl status upstream
 ```
 
+## Something else
+
+If you use the upstream suggested by this project, you need to know that they have already configured a certificate for the IP address, and you **DO NOT** need to use a configuration such as `dns.google`. It is also strongly not recommended for you to do this, it will bring efficiency and safety issues. Wouldn't it be great to not need to resolve the addresses of the DNS servers? In fact, I can’t understand why some people choose domain names instead of IP addresses. I couldn’t believe it when I met such a person.
+
 ## About AdGuardHome Config
 
 For more information about AdGuardHome configuration, just read the official [AdGuardHome documentation](https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration).
