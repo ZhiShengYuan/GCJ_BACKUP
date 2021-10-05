@@ -32,7 +32,7 @@ chmod +x /usr/local/bin/upstream.sh
 
 ### Use systemd timer to automate
 
-You can run the following code directly, or write it yourself by referring to this project, or just use crontab to automate it. What you need to pay attention to at this step is the connectivity between your network and raw.githubusercontent.com. If your network has this problem, you can try to manually copy to the directory below and continue, or try to use some CDN services.
+You can run the following code directly, or write it yourself by referring to this project, or just use crontab to automate it. What you need to pay attention to at this step is the connectivity between your network and `raw.githubusercontent.com`. If your network has this problem, you can try to manually copy to the directory below and continue, or try to use some CDN services.
 
 ```
 curl -o '/lib/systemd/system/upstream.service' 'https://raw.githubusercontent.com/fernvenue/adguard-home-upstream/master/upstream.service'
