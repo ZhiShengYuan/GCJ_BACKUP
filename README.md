@@ -25,22 +25,25 @@ You need to change two options in `.../AdGuardHome.yaml` before you use and for 
 At this step, there is the possibility of DNS failure, you need to clearly understand and pay attention to back up your DNS settings.
 
 ```
-curl -o '/usr/local/bin/upstream.sh' 'https://raw.githubusercontent.com/fernvenue/adguard-home-upstream/master/upstream.sh'
+curl -o '/usr/local/bin/upstream.sh' 'https://cdn.jsdelivr.net/gh/fernvenue/adguard-home-upstream/upstream.sh'
 chmod +x /usr/local/bin/upstream.sh
 /usr/local/bin/upstream.sh
 ```
+If you use **openwrt or other non-systemd Linux** system, you have to change the last line `systemctl restart AdGuardHome` to `/etc/init.d/AdGuardHome restart`.
 
 ### Use systemd timer to automate
 
-You can run the following code directly, or write it yourself by referring to this project, or just use crontab to automate it. What you need to pay attention to at this step is the connectivity between your network and `raw.githubusercontent.com`. If your network has this problem, you can try to manually copy to the directory below and continue, or try to use some CDN services.
+You can run the following code directly, or write it yourself by referring to this project, or just use crontab to automate it.
 
 ```
-curl -o '/lib/systemd/system/upstream.service' 'https://raw.githubusercontent.com/fernvenue/adguard-home-upstream/master/upstream.service'
-curl -o '/lib/systemd/system/upstream.timer' 'https://raw.githubusercontent.com/fernvenue/adguard-home-upstream/master/upstream.timer'
+curl -o '/lib/systemd/system/upstream.service' 'https://cdn.jsdelivr.net/gh/fernvenue/adguard-home-upstream/upstream.service'
+curl -o '/lib/systemd/system/upstream.timer' 'https://cdn.jsdelivr.net/gh/fernvenue/adguard-home-upstream/upstream.timer'
 systemctl enable upstream.timer
 systemctl start upstream.timer
 systemctl status upstream
 ```
+
+If you use **openwrt or other non-systemd Linux** system, you can just use crontab to automate it: `0 5 * * * /usr/local/bin/upstream.sh`.
 
 ## Something else
 
