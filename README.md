@@ -19,6 +19,7 @@ You need to change two options in `.../AdGuardHome.yaml` before you use and for 
 
 - The option `upstream_dns_file` must be `/usr/share/upstream.txt`.
 - The option `all_servers` should be `true`.
+- The option `cache_optimistic` is recommended to be `true`.
 
 ### Get and run the script
 
