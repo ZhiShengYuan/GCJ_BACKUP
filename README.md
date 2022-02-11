@@ -1,7 +1,7 @@
 # AdGuardHome Upstream
 
-[![LICENSE](https://img.shields.io/badge/LICENSE-BSD3%20Clause%20Liscense-brightgreen?style=flat-square)](./LICENSE)
-[![AdGuardHome](https://img.shields.io/badge/AdGuardHome-Documentation-green?style=flat-square&logo=adguard)](https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration)
+[![LICENSE](https://img.shields.io/badge/LICENSE-BSD3%20Clause%20Liscense-blue?style=flat-square)](./LICENSE)
+[![AdGuardHome](https://img.shields.io/badge/AdGuardHome-Documentation-brightgreen?style=flat-square&logo=adguard)](https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration)
 [![adguardhome-upstream](https://img.shields.io/badge/GitHub-AdGuardHome%20Upstream-blueviolet?style=flat-square&logo=github)](https://github.com/fernvenue/adguardhome-upstream)
 [![adguardhome-upstream](https://img.shields.io/badge/GitLab-AdGuardHome%20Upstream-orange?style=flat-square&logo=gitlab)](https://gitlab.com/fernvenue/adguardhome-upstream)
 
