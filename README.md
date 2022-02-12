@@ -5,7 +5,6 @@
 [![adguardhome-upstream](https://img.shields.io/badge/GitHub-AdGuardHome%20Upstream-blueviolet?style=flat-square&logo=github)](https://github.com/fernvenue/adguardhome-upstream)
 [![adguardhome-upstream](https://img.shields.io/badge/GitLab-AdGuardHome%20Upstream-orange?style=flat-square&logo=gitlab)](https://gitlab.com/fernvenue/adguardhome-upstream)
 
-
 This is the use of [felixonmars/dnsmasq-china-list](https://github.com/felixonmars/dnsmasq-china-list) on AdGuardHome, it is an automated collection project that collects all domain names in mainland China, based on the location of NS. It has the following features:
 
 - Improve resolve speed for Chinese domains.
@@ -30,7 +29,7 @@ You need to change two options in `.../AdGuardHome.yaml` before you use and for 
 At this step, there is the possibility of DNS failure, you need to clearly understand and pay attention to back up your DNS settings.
 
 ```
-curl -o '/usr/local/bin/upstream.sh' 'https://cdn.jsdelivr.net/gh/fernvenue/adguard-home-upstream/upstream.sh'
+curl -o '/usr/local/bin/upstream.sh' 'https://gitlab.com/fernvenue/adguardhome-upstream/-/raw/master/upstream.sh'
 chmod +x /usr/local/bin/upstream.sh
 /usr/local/bin/upstream.sh
 ```
@@ -41,8 +40,8 @@ If you use **openwrt or other non-systemd Linux** system, you have to change the
 You can run the following code directly, or write it yourself by referring to this project, or just use crontab to automate it.
 
 ```
-curl -o '/lib/systemd/system/upstream.service' 'https://cdn.jsdelivr.net/gh/fernvenue/adguard-home-upstream/upstream.service'
-curl -o '/lib/systemd/system/upstream.timer' 'https://cdn.jsdelivr.net/gh/fernvenue/adguard-home-upstream/upstream.timer'
+curl -o '/lib/systemd/system/upstream.service' 'https://gitlab.com/fernvenue/adguardhome-upstream/-/raw/master/upstream.service'
+curl -o '/lib/systemd/system/upstream.timer' 'https://gitlab.com/fernvenue/adguardhome-upstream/-/raw/master/upstream.timer'
 systemctl enable upstream.timer
 systemctl start upstream.timer
 systemctl status upstream
