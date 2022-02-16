@@ -13,7 +13,7 @@ The application of [felixonmars/dnsmasq-china-list](https://github.com/felixonma
     * [Features](#features)
     * [Files in repository](#files-in-repository)
     * [How felixonmars's dnsmasq-china-list works?](#how-felixonmarss-dnsmasq-china-list-works)
-    * [Why it's better than any other methods?](#why-its-better-than-other-methods)
+    * [Why it's better than other methods?](#why-its-better-than-other-methods)
 * [Something else](#something-else)
     * [Always use the recommended configuration first](#always-use-the-recommended-configuration-first)
     * [This is not for...](#this-is-not-for)
