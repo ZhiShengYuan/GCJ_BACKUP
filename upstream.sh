@@ -18,7 +18,7 @@ if [[ $IPv4 == "true" ]]; then
 	fi
 else
 	if [[ $IPv6 == "true" ]]; then
-		echo "$DATE: IPv4 connection available."
+		echo "$DATE: IPv6 connection available."
 		curl -o "/var/tmp/default.upstream" https://gitlab.com/fernvenue/adguardhome-upstream/-/raw/master/v6only.conf > /dev/null 2>&1
 	else
 		echo "ERROR: No available network connection was detected, please try again."
