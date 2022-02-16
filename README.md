@@ -107,7 +107,7 @@ The recommended configurations will be automatically selected and used by the sc
 
 ### This is not for...
 
-This is **NOT FOR** breaking any network firewall, and in fact it **CAN NOT** be used for that either. It's only used to improve resolve speed for Chinese domains, get the best CDN or geo-based results and so on, don't misunderstand it.
+This is **NOT FOR** breaking any network firewall, and in fact it **CAN NOT** be used for that either. It's only used to accelerate internet in mainland China such as improve DNS resolve speed for Chinese domains, get the best CDN or geo-based results and so on, please don't misunderstand it.
 
 ### Links
 
